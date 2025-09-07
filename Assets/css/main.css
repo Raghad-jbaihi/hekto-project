@@ -1,0 +1,14 @@
+body{
+     font-family: var(--mainfont);
+}
+
+.header{
+
+    padding:57px 0px;
+}
+.header ul{
+     display:flex;
+    flex-wrap: wrap;
+    gap:35px;
+
+}

@@ -3,12 +3,45 @@ body{
 }
 
 .header{
-
     padding:57px 0px;
 }
 .header ul{
      display:flex;
     flex-wrap: wrap;
     gap:35px;
-
 }
+
+ .footer .left-side {
+     gap: 35px;
+    align-items: flex-start;
+ }
+
+ .footer .search form{
+    border-radius: 5px;
+    border: 2px solid #E7E6EF;
+    width:376px;
+ }
+ .footer button{
+    padding:10px 40px;
+ }
+
+.footer .right-side{
+   width: 60%;
+   
+ }
+
+ .footer-item{
+ gap:45px;
+ }
+ .footer a{
+    color:#8A8FB9;
+ }
+
+.address-info{
+    padding:36px 0;
+    color:#8A8FB9;
+}
+
+
+
+

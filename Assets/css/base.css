@@ -32,11 +32,32 @@ ul{
     margin:auto;
 }
 
+@media screen and (max-width:1400px){
+    .container{
+        width:calc(100% - 200px);
+    }
+}
+
+@media screen and (max-width:900px){
+    .container{
+        width:calc(100% - 100px);
+    }
+}
+
+
+@media screen and (max-width:570px){
+    .container{
+        width:calc(100% - 40px);
+    }
+}
+
+
 .row{
      display:flex;
     flex-wrap: wrap;
     justify-content:space-between;
     align-items:flex-start;
+   
 }
 /* Start Of Header*/
 .bar{
@@ -76,7 +97,7 @@ ul{
 
   
 @media screen and (max-width:1150px) {
-    .list,.search{
+    .list, .header .search{
     display:none;
 }
 .bar{

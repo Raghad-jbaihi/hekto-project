@@ -22,7 +22,8 @@ body {
 .clients .row{
    flex-wrap: nowrap;
    gap:15px;
-    overflow-x: auto;
+
+  
 }
 
 .clients .logo{
@@ -30,15 +31,18 @@ body {
   
 }
 .clients img{
-   width:225px;
-   height:225px;
+   width:300px;
+   height:300px;
 
 }
 
 @media screen and (max-width:900px) {
    .clients .logo{
    width:calc((100% - 30px) / 3);
- 
+}
+
+.clients .row{
+        overflow-x: auto;
 }
 }
 

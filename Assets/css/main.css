@@ -11,7 +11,29 @@ body {
   gap:35px;
 }
 
+/*start of newsletter*/
+ .newsletter{
+   background: url('../images/products/newsletter.webp');
+   padding: 175px 0px; 
+   text-align: center;
+   background-attachment: fixed;
+ }
 
+ .newsletter h2{
+   margin-bottom: 50px;
+   color:#151875;
+   font-size:35px;
+ }
+
+ .shop-btn{
+   transition: all 1s;
+ }
+
+ .shop-btn:hover{
+   background-color: #151875;
+ }
+
+/*end  of newsletter*/
 
 /*start of clieant*/
 
@@ -45,9 +67,6 @@ body {
         overflow-x: auto;
 }
 }
-
-
-
 
 /*end  of clieant*/
 

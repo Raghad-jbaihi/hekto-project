@@ -162,3 +162,11 @@ ul{
 
 
  /*End Of Footer*/
+
+ .text-primary{
+    color:var(--maincolor);
+ }
+
+ .text-secondary{
+    color:#151875;
+ }

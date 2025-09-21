@@ -11,8 +11,14 @@ body {
   gap:35px;
 }
 
+
+
+
+
  
 /* Start of featured-products*/
+
+
 .featured-products{
    padding:150px 0px;
  
@@ -31,11 +37,21 @@ body {
  .featured-products .products{ 
    margin-top:50px;
    flex-grow: 1;
-   flex-basis: 300px;  /*To make Responsive without i am actually did*/
+   flex-basis: 250px;  /*To make Responsive without i am actually did*/
    flex-shrink: 0;
    box-shadow: 0px 0px 25px #0000001a;
    border-radius:5px;
+    transition:all .6s;
+    position:relative;
+
 }
+
+.badge-sale{
+  position:absolute;  /*should to his parent position:relative!! (his parent:products.)*/
+  top:15px;
+  left:10px;
+}
+
 
 .featured-products .products .img{
    background-color: #F6F7FB;
@@ -56,8 +72,58 @@ body {
    display:flex;
    flex-direction: column;
    gap:10px;
+
 }
 
+
+.color{
+  width:20px;
+  height:6px;
+  border-radius:10px ;
+  border:none;
+  outline: none;
+  cursor:pointer;
+}
+.color-one{
+  background-color:#05E6B7;
+}
+
+.color-two{
+  background-color:#F701A8;
+}
+
+.color-three{
+  background-color:#00009D;
+   transition:all .6s;
+}
+
+.prouduct-details h3{
+  transition:all .6s;
+}
+
+.product-info{
+   transition:all .6s;
+}
+  
+.products :hover.prouduct-details{
+  background-color: #2F1AC4;
+  border-radius:5px;
+}
+
+.products :hover .color-three{
+  background-color:#FFEAC1;
+}
+
+.products :hover .product-info{
+  color:#fff;
+}
+
+
+
+
+.products :hover.prouduct-details h3{
+  color:#fff;
+}
 
 
 

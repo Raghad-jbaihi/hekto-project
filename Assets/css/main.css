@@ -107,6 +107,10 @@ color:#8A8FB9;
 
 /* Start of featured-products*/
 
+.products{
+   position:relative;
+}
+
 .featured-products {
   padding: 150px 0px;
 }
@@ -130,6 +134,7 @@ color:#8A8FB9;
   border-radius: 5px;
   transition: all 0.6s;
   position: relative;
+ 
 }
 
 .badge-sale {
@@ -147,7 +152,55 @@ color:#8A8FB9;
   padding: 30px 0px;
   border-radius: 5px;
   object-fit: contain; /* حتى ما تبين الصورة مش طبيعية (ممطوطة )*/
+ 
+  
+  }
+
+.featured-products .icons {
+  display:none;
+  position:absolute;
+  top:120px;
+  left:10px;
 }
+ 
+.products:hover .icons{
+  display: flex;
+  flex-direction: column;
+   gap:15px;
+}
+
+
+.icon:active{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+background-color: #dc7fec;
+}
+
+
+.btn-viewdetails{
+  position:relative;
+}
+
+ .btn-viewdetails {
+  position:absolute;
+  top:200px;
+  left:65px;
+  display:none;
+}
+
+.products:hover .btn-viewdetails{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.products:hover .img-btn{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
 
 .featured-products .prouduct-details {
   padding: 30px 0px;
@@ -185,22 +238,25 @@ color:#8A8FB9;
   transition: all 0.6s;
 }
 
-.products :hover.prouduct-details {
+.products:hover .prouduct-details {
   background-color: #2f1ac4;
   border-radius: 5px;
 }
 
-.products :hover .color-three {
+.products:hover .color-three {
   background-color: #ffeac1;
 }
 
-.products :hover .product-info {
+.products:hover .product-info {
   color: #fff;
 }
 
-.products :hover.prouduct-details h3 {
+.products:hover .prouduct-details h3 {
   color: #fff;
 }
+
+
+
 
 /* end of featured-products*/
 

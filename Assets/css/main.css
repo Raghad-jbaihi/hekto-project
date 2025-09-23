@@ -494,7 +494,64 @@ text-decoration:line-through;
 
 /*end of shopex offer*/
 
+/*Start of trending products*/
+.trending-products{
+  padding:100px 0px;
+}
 
+.trending-products h2{
+    font-family: "Josefin Sans", sans-serif;
+  color: #1a0b5b;
+}
+
+
+.trending-products .row {
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.trending-products .trending {
+  margin-top: 50px;
+  flex-grow: 1;
+  flex-basis: 250px; /*To make Responsive without i am actually did*/
+  flex-shrink: 0;
+  box-shadow: 0px 0px 25px #0000001a;
+  border-radius: 5px;
+  transition: all 0.6s;
+}
+
+.trending-products .trending .img {
+  background-color: #f6f7fb;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+  object-fit: contain; /* حتى ما تبين الصورة مش طبيعية (ممطوطة )*/
+ 
+  }
+
+.trending-details{
+  display:flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  gap:10px;
+  padding:15px 0px;
+}
+
+.trending-span{
+  color:#151875;
+}
+
+.span-trending{
+  color:#1518755a;
+  text-decoration: line-through;
+}
+.text-trending{
+color:#151875;
+}
+/*end of trending products*/
 
 /*start of newsletter*/
 .newsletter {
@@ -605,3 +662,4 @@ text-decoration:line-through;
 .align-items-center{
   align-items: center;
 }
+

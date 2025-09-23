@@ -258,7 +258,177 @@ background-color: #dc7fec;
 
 
 
+
+
 /* end of featured-products*/
+
+
+/*start of Leatest Products*/
+
+.leatest-products {
+  padding: 100px 0px;
+}
+
+.leatest-products h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #1a0b5b;
+}
+
+.leatest-products .leatest {
+display:flex;
+gap:60px;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+padding:30px 0;
+color:#151875;
+}
+
+
+
+.leatest-products .leatest p:hover {
+  text-decoration: underline;
+  color:var(--maincolor);
+   transition: all 0.6s;
+}
+
+
+.products-leatest{
+   position:relative;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.leatest-products .row {
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.leatest-products .products-leatest {
+  margin-top: 50px;
+  
+  box-shadow: 0px 0px 25px #0000001a;
+  border-radius: 5px;
+  transition: all 0.6s;
+  position: relative;
+   width:calc((100% - 60px ) /3);
+   flex:flex;
+   flex-wrap: wrap;
+}
+
+
+.leatest-products .products-leatest .img {
+  background-color: #f6f7fb;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0px;
+  border-radius: 5px;
+  object-fit: contain; /* حتى ما تبين الصورة مش طبيعية (ممطوطة )*/
+ 
+  }
+
+
+  .leatest-products .icons {
+  display:none;
+  position:absolute;
+  top:150px;
+  left:10px;
+}
+ 
+.products-leatest:hover .icons{
+  display: flex;
+  flex-direction: column;
+   gap:15px;
+}
+
+
+.products-leatest:hover .btn-viewdetails{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  top:297px;
+  left:108px;
+
+
+}
+
+.products-leatest:hover .img-btn{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  top:350px;
+  left:20px;
+}
+
+
+
+@media screen and (max-width:900px){
+
+  .leatest-products .row {
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+  .leatest-products .products-leatest {
+    width:calc((100% - 15px) / 2);
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+}
+
+
+@media screen and (max-width:630px){
+
+  .leatest-products .row {
+  justify-content: flex-start;
+
+}
+
+  .leatest-products .products-leatest {
+    width:100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+}
+  
+
+.end-leatest {
+   
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:10px;
+  color:#151875;
+}   
+
+.span-leatest{
+color:#FB2448;
+text-decoration:line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end of Leatest Products*/
 
 /*start of newsletter*/
 .newsletter {

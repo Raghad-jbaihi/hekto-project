@@ -304,17 +304,22 @@ color:#151875;
   gap: 30px;
 }
 
+
 .leatest-products .products-leatest {
   margin-top: 50px;
-  
-  box-shadow: 0px 0px 25px #0000001a;
+
+
+
   border-radius: 5px;
   transition: all 0.6s;
   position: relative;
    width:calc((100% - 60px ) /3);
    flex:flex;
    flex-wrap: wrap;
+   background: transparent;
+box-shadow: none;
 }
+
 
 
 .leatest-products .products-leatest .img {
@@ -552,6 +557,100 @@ text-decoration:line-through;
 color:#151875;
 }
 /*end of trending products*/
+
+
+
+/*start of Top Categories*/
+.top-categories{
+  padding:100px 0px;
+      font-family: "Josefin Sans", sans-serif;
+  color: #1a0b5b;
+}
+
+
+.top-categories .row {
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.top-categories .top {
+  margin-top: 50px;
+  border-radius:  5px;
+  transition: all 0.6s;
+  position: relative;
+   width:calc((100% - 45px ) /4);
+   flex:flex;
+   flex-wrap: wrap;
+  background: transparent;
+box-shadow: none;
+}
+
+
+.top-categories img {
+    background-color: #f6f7fb;
+    box-shadow: 0 5px 5px #807e7e40;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    padding: 35px 7px;
+    margin-top: 30px;
+    position: relative;
+    border: 5px solid transparent;
+    transition: all .7;
+    padding:20px;
+}
+.top-categories .top:hover img{
+border-color: #9877E7;
+border-top:none transparent;
+border-right: none transparent ;
+}
+
+.btn-details {
+  padding: 5px 12px;   
+  font-size: 14px;     
+}
+
+.top:hover .btn-viewdetails{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  top:240px;
+  left:90px;
+}
+
+.top:hover .img-btn{
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+  top:300px;
+  left:20px;
+}
+
+.top-categories .top-details{
+  padding:10px 0px;
+}
+
+
+@media screen and (max-width:1070px){
+
+  .top-categories .row {
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+  .top-categories .top {
+    width:calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (max-width:850px){
+
+  .top-categories .top {
+    width:100%;
+  }
+}
+/*end of Top Categories*/
+
 
 /*start of newsletter*/
 .newsletter {

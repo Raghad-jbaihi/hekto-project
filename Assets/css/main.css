@@ -846,4 +846,8 @@ padding:5px 15px;
 
 
 /*end of leatest products*/
+img, .hero-image, .newsletter {
+  max-width: 100%;
+  height: auto;
+}
 
